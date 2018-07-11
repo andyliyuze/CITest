@@ -20,6 +20,7 @@ namespace CITest
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+            .UseUrls("http://localhost:5053")
                 .Build();
     }
 }
